@@ -321,3 +321,107 @@ select {
     border-color: #754344;
     color: #ff9792;
 }
+
+/* Shopping cart */
+.aside {
+    padding: 21px;
+    position: sticky;
+    top: 16px;
+    border-top: 3px solid #ff5553;
+}
+
+.ticket-top {
+    color: #b5b5bc;
+    font-size: 9px;
+    border-bottom: 1px dashed #4b4b50;
+    padding-bottom: 14px;
+}
+
+.ticket-top span {
+    letter-spacing: 1px;
+}
+
+.aside h2 {
+    margin: 15px 0;
+}
+
+.label {
+    display: grid;
+    gap: 5px;
+    color: #d0cfd3;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+#lines {
+    border-top: 1px dashed #49494e;
+    border-bottom: 1px dashed #49494e;
+    padding: 12px 0;
+    margin: 18px 0;
+}
+
+.empty {
+    padding: 25px 4px;
+    text-align: center;
+    color: #b5b5bc;
+}
+
+.empty strong {
+    color: white;
+    display: block;
+}
+
+.line {
+    padding: 8px 0;
+}
+
+.line strong,
+.record strong {
+    overflow-wrap: anywhere;
+}
+
+.line small,
+.record small {
+    display: block;
+    color: #b5b5bc;
+}
+
+.qty {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.qty button {
+    padding: 1px 9px;
+}
+
+.total {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.wide {
+    width: 100%;
+    margin-top: 7px;
+}
+
+.manage-head {
+    margin-bottom: 20px;
+}
+
+.record {
+    padding: 15px 18px;
+    margin: 9px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
