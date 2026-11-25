@@ -9,6 +9,194 @@
 </head>
 
 <body>
+    <header>
+        <div class="brand">
+            <span class="mark">G</span>GRILL<span>MASTER</span>
+        </div>
+        <nav aria-label="Main navigation">
+            <button type="button" data-action="page" data-id="Counter" class="active"
+                aria-current="page">Counter</button>
+            <button type="button" data-action="page" data-id="Products">Products</button>
+            <button type="button" data-action="page" data-id="Customers">Customers</button>
+            <button type="button" data-action="page" data-id="Orders">Orders</button>
+        </nav>
+    </header>
+    <main>
+        <section id="counter">
+            <div class="workspace">
+                <div class="catalog">
+
+                    <!-- Featured burger -->
+                    <div id="feature">
+                        <div class="hero">
+                            <img src="assets/double.jpg" alt="">
+                            <div class="hero-content">
+                                <span class="eyebrow">Featured on the menu</span>
+                                <h2>Double Feature<br>Burger</h2>
+                                <button type="button" data-action="add" data-id="double" class="primary">Add to order ·
+                                    Rs. 1,650</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Menu heading and search -->
+                    <div class="menu-head">
+                        <h1>Counter menu</h1>
+                        <input id="search" type="search" aria-label="Search menu" placeholder="Search menu…">
+                    </div>
+
+                    <!-- Category buttons -->
+                    <div id="filters" aria-label="Menu categories">
+                        <button type="button" data-action="filter" data-id="All" aria-pressed="true"
+                            class="active">All</button>
+                        <button type="button" data-action="filter" data-id="Burgers" aria-pressed="false"
+                            class="">Burgers</button>
+                        <button type="button" data-action="filter" data-id="Fries" aria-pressed="false"
+                            class="">Fries</button>
+                        <button type="button" data-action="filter" data-id="Drinks" aria-pressed="false"
+                            class="">Drinks</button>
+                    </div>
+
+                    <!-- Six product cards -->
+                    <div id="cards">
+
+                        <!-- Classic Cheeseburger -->
+                        <article class="card" data-product-id="classic">
+                            <img src="assets/classic.jpg" alt="">
+                            <div class="card-body">
+                                <span class="category">Burgers</span>
+                                <h3>Classic Cheeseburger</h3>
+                                <div class="card-bottom">
+                                    <strong>Rs. 1,250</strong>
+                                    <button type="button" data-action="add" data-id="classic" class="add"
+                                        aria-label="Add Classic Cheeseburger">+</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Golden Fries -->
+                        <article class="card" data-product-id="fries">
+                            <img src="assets/fries.jpg" alt="">
+                            <div class="card-body">
+                                <span class="category">Fries</span>
+                                <h3>Golden Fries</h3>
+                                <div class="card-bottom">
+                                    <strong>Rs. 450</strong>
+                                    <button type="button" data-action="add" data-id="fries" class="add"
+                                        aria-label="Add Golden Fries">+</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Coca Cola -->
+                        <article class="card" data-product-id="cola">
+                            <img src="assets/cola.jpg" alt="">
+                            <div class="card-body">
+                                <span class="category">Drinks</span>
+                                <h3>Ice Cold Cola</h3>
+                                <div class="card-bottom">
+                                    <strong>Rs. 300</strong>
+                                    <button type="button" data-action="add" data-id="cola" class="add"
+                                        aria-label="Add Ice Cold Cola">+</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Double Feature Burger -->
+                        <article class="card" data-product-id="double">
+                            <img src="assets/double.jpg" alt="">
+                            <div class="card-body">
+                                <span class="category">Burgers</span>
+                                <h3>Double Feature Burger</h3>
+                                <div class="card-bottom">
+                                    <strong>Rs. 1,650</strong>
+                                    <button type="button" data-action="add" data-id="double" class="add"
+                                        aria-label="Add Double Feature Burger">+</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Crispy Chicken Burger -->
+                        <article class="card" data-product-id="chicken">
+                            <img src="assets/chicken.jpg" alt="">
+                            <div class="card-body">
+                                <span class="category">Burgers</span>
+                                <h3>Crispy Chicken Burger</h3>
+                                <div class="card-bottom">
+                                    <strong>Rs. 1,100</strong>
+                                    <button type="button" data-action="add" data-id="chicken" class="add"
+                                        aria-label="Add Crispy Chicken Burger">+</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Chocolate Shake -->
+                        <article class="card" data-product-id="shake">
+                            <img src="assets/shake.jpg" alt="">
+                            <div class="card-body">
+                                <span class="category">Drinks</span>
+                                <h3>Chocolate Shake</h3>
+                                <div class="card-bottom">
+                                    <strong>Rs. 650</strong>
+                                    <button type="button" data-action="add" data-id="shake" class="add"
+                                        aria-label="Add Chocolate Shake">+</button>
+                                </div>
+                            </div>
+                        </article>
+                        <p id="noProducts" hidden>No matching products.</p>
+                    </div>
+                </div>
+
+                <!-- Current order and shopping cart -->
+                <aside>
+                    <div class="ticket-top">GRILLMASTER <span>POS</span>
+                    </div>
+                    <h2 id="ticketTitle">Current order</h2>
+                    <label>Customer<select id="buyer">
+                            <option value="">Walk-in customer</option>
+                        </select>
+                    </label>
+                    <div id="lines">
+                        <div class="empty">
+                            <strong>Your Cart is empty</strong>Add an item from menu to start an order.
+                        </div>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <strong id="total">Rs. 0</strong>
+                    </div>
+                    <button class="primary wide" id="checkout" disabled>Complete order</button>
+                    <button class="wide" id="cancelEdit" hidden>Cancel changes</button>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Product, customer and order management -->
+        <section id="manager" hidden>
+        </section>
+    </main>
+
+    <!-- Reusable dialog for forms and bills -->
+    <dialog id="modal">
+        <form id="form">
+            <div class="modal-head">
+                <h2 id="modalTitle">
+                </h2>
+                <button type="button" id="close" aria-label="Close">×</button>
+            </div>
+            <div id="fields">
+            </div>
+            <button id="submit" class="primary wide">Save</button>
+        </form>
+    </dialog>
+
+    <!-- Notification message -->
+    <div id="notice" role="status">
+    </div>
+
+    <!-- Printable bill -->
+    <section id="printedBill" aria-hidden="true">
+    </section>
     <script src="js/app.js"></script>
 </body>
 
