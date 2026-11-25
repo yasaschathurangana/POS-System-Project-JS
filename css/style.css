@@ -11,3 +11,32 @@ body {
     line-height: 1.5;
     font-family: "DM Sans", Arial, sans-serif;
 }
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    color: inherit;
+    background: #24252a;
+    border: 1px solid #37383e;
+    border-radius: 7px;
+    padding: 8px 14px;
+}
+
+button:disabled {
+    opacity: .45;
+    cursor: default;
+}
+
+button:enabled:hover {
+    filter: brightness(1.22);
+}
+
+:focus-visible {
+    outline: 3px solid #ffc168;
+    outline-offset: 3px;
+}
