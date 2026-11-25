@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color-scheme: dark;
+    margin: 0;
+    background: #101113;
+    color: #ffff;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "DM Sans", Arial, sans-serif;
+}
