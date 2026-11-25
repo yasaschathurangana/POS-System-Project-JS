@@ -6,7 +6,7 @@ body {
     color-scheme: dark;
     margin: 0;
     background: #101113;
-    color: #ffff;
+    color: #faf8f5;
     font-size: 15px;
     line-height: 1.5;
     font-family: "DM Sans", Arial, sans-serif;
@@ -41,7 +41,7 @@ button:enabled:hover {
     outline-offset: 3px;
 }
 
-/* header and Navigation bar */
+/* Header and navigation */
 header {
     padding: 0 max(4vw, 20px);
     min-height: 76px;
@@ -97,7 +97,7 @@ nav .active {
     color: #fff;
 }
 
-/* Main cart layout */
+/* Main layout */
 main {
     max-width: 1580px;
     margin: auto;
@@ -111,7 +111,7 @@ main {
     align-items: start;
 }
 
-/* feature buger product banner */
+/* Featured product banner */
 .hero {
     position: relative;
     overflow: hidden;
@@ -172,7 +172,7 @@ main {
     margin: 13px 0 20px;
 }
 
-/* More button and Layout styles */
+/* Shared buttons and layout styles */
 .primary {
     background: #ff5553;
     color: #190707;
@@ -247,18 +247,14 @@ select {
 }
 
 /* Product cards */
-
 #cards {
     display: grid;
-
-    grid-template-columns:
-        minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     gap: 14px;
 }
 
 .card,
-.aside,
+aside,
 .record {
     border: 1px solid #37383e;
     border-radius: 12px;
@@ -321,7 +317,7 @@ select {
 }
 
 /* Shopping cart */
-.aside {
+aside {
     padding: 21px;
     position: sticky;
     top: 16px;
@@ -339,11 +335,11 @@ select {
     letter-spacing: 1px;
 }
 
-.aside h2 {
+aside h2 {
     margin: 15px 0;
 }
 
-.label {
+label {
     display: grid;
     gap: 5px;
     color: #d0cfd3;
@@ -425,7 +421,7 @@ select {
 }
 
 /* Dialog forms */
-.dialog {
+dialog {
     background: #1a1b1f;
     color: inherit;
     border: 1px solid #37383e;
@@ -434,7 +430,7 @@ select {
     width: min(440px, 94vw);
 }
 
-.dialog::backdrop {
+dialog::backdrop {
     background: #08080bd9;
 }
 
@@ -598,7 +594,7 @@ select {
         display: none !important;
     }
 
-    .dialog::backdrop {
+    dialog::backdrop {
         display: none;
     }
 
