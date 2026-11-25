@@ -171,3 +171,54 @@ main {
     letter-spacing: -2px;
     margin: 13px 0 20px;
 }
+
+/* More button and Layout styles */
+.primary {
+    background: #ff5553;
+    color: #190707;
+    font-weight: 800;
+    border-color: transparent;
+}
+
+.menu-head,
+.modal-head,
+.row,
+.total,
+.ticket-top,
+.card-bottom,
+.manage-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(25px, 3vw, 34px);
+    letter-spacing: -1.4px;
+}
+
+h2 {
+    letter-spacing: -.7px;
+}
+
+.menu-head {
+    margin: 26px 0 14px;
+}
+
+input,
+select {
+    min-width: 0;
+    background: #141518;
+    color: inherit;
+    border: 1px solid #37383e;
+    padding: 10px 12px;
+    border-radius: 7px;
+}
