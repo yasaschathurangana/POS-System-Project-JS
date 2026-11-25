@@ -222,3 +222,26 @@ select {
     padding: 10px 12px;
     border-radius: 7px;
 }
+
+/* Search and category filters */
+#search {
+    width: 185px;
+}
+
+#filters {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+#filters button {
+    border-radius: 30px;
+    padding: 6px 15px;
+    font-size: 13px;
+}
+
+#filters .active {
+    background: #f7eee6;
+    color: #191818;
+}
