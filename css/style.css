@@ -534,3 +534,89 @@ select {
         flex-wrap: wrap;
     }
 }
+
+/* Bill design */
+#printedBill {
+    display: none;
+}
+
+.bill {
+    background: white;
+    color: #171717;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.45;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    overflow-wrap: anywhere;
+}
+
+.bill h2 {
+    margin: 0 0 8px;
+}
+
+.bill table {
+    width: 100%;
+    margin: 14px 0;
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+}
+
+.bill th,
+.bill td {
+    padding: 5px 2px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.bill th:first-child,
+.bill td:first-child {
+    text-align: left;
+}
+
+.bill thead,
+.bill-total {
+    border-bottom: 1px solid;
+}
+
+.bill-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-width: 0;
+    border-top: 1px solid;
+    padding-top: 8px;
+}
+
+/* Print layout */
+@media print {
+    body:has(#printedBill > *) {
+        background: white;
+        margin: 0;
+    }
+
+    body:has(#printedBill > *)> :not(#printedBill) {
+        display: none !important;
+    }
+
+    .dialog::backdrop {
+        display: none;
+    }
+
+    #printedBill {
+        display: block;
+    }
+
+    .bill {
+        padding: 0;
+        max-width: 150mm;
+        margin: auto;
+        font-size: 10pt;
+    }
+
+    .bill tr,
+    .bill-total {
+        break-inside: avoid;
+    }
+}
