@@ -96,3 +96,17 @@ nav .active {
     background: #343035;
     color: #fff;
 }
+
+/* Main cart layout */
+main {
+    max-width: 1580px;
+    margin: auto;
+    padding: 30px max(4vw, 20px) 60px;
+}
+
+.workspace {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(285px, 30%);
+    gap: 24px;
+    align-items: start;
+}
