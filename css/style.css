@@ -465,3 +465,72 @@ select {
 [hidden] {
     display: none !important;
 }
+
+/* Responsive layout */
+@media (max-width: 1000px) {
+    #cards {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 740px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        gap: 10px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav button {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: static;
+    }
+
+    main {
+        padding-top: 18px;
+    }
+
+    .hero {
+        min-height: 195px;
+        padding: 21px;
+    }
+
+    .card img,
+    .placeholder {
+        height: 145px;
+    }
+
+    .record {
+        flex-wrap: wrap;
+    }
+
+    #search {
+        width: 42%;
+    }
+
+    .card-body {
+        padding: 11px;
+    }
+
+    .card-bottom {
+        gap: 4px;
+    }
+
+    .manage-head {
+        flex-wrap: wrap;
+    }
+}
