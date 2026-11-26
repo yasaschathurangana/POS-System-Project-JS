@@ -1050,8 +1050,7 @@ function btnAddCustomerOnAction() {
         </label>
     `;
 
-    document.getElementById("submit").textContent =
-        "Save customer";
+    document.getElementById("submit").textContent = "Save customer";
 
     document.getElementById("modal").showModal();
 }
@@ -1766,15 +1765,6 @@ document.getElementById("checkout").onclick = function () {
     btnCompleteOrderOnAction();
 };
 
-
-// 40. Start Application
-
-btnPageOnAction("Counter");
-
-// Uses the existing HTML IDs, CSS classes and data-action attributes.
-// Data remains in memory, as in the original project.
-// Browser integration testing has not been performed.
-// Reset the save button when the dialog is closed.
 document.getElementById("modal").addEventListener("close", function () {
     document.getElementById("submit").disabled = false;
 });
