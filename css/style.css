@@ -186,6 +186,7 @@ main {
 .total,
 .ticket-top,
 .card-bottom,
+/* Management records */
 .manage-head {
     display: flex;
     align-items: center;
@@ -613,4 +614,29 @@ dialog::backdrop {
     .bill-total {
         break-inside: avoid;
     }
+}
+
+/* Product image upload */
+#productImage {
+    width: 100%;
+    border: 1px dashed #67656b;
+    cursor: pointer;
+}
+
+#productImage::file-selector-button {
+    background: #3a272b;
+    color: #ff9792;
+    border: 1px solid #754344;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#imagePreview {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
 }
